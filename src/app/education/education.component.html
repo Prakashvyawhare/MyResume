@@ -1,0 +1,26 @@
+<!-- <div>
+<div class="container" *ngFor="let class of education let i=index;">
+    <h5>Program/Degree :{{class.Degree}}</h5>
+    <h6>Institution : {{class.college}}</h6>
+    <p>Department :{{class.department}} </p>
+    <p>Passout in {{class.year}} with {{class.score}}</p>
+
+</div>
+</div> -->
+<div class="container">
+    <h5>Most Recent Course</h5>
+    <hr>
+    <app-education-parent [classes] = "BE"></app-education-parent>
+</div>
+
+<div class="container">
+    <h5>Previous Educations</h5>
+    <hr>
+    <app-education-parent [classes] = "education[1]"></app-education-parent>
+</div>
+<div class="container">
+    <h5>Previous Educations</h5>
+    <hr>
+    <app-education-parent [classes] = "education[2]"></app-education-parent>
+</div>
+

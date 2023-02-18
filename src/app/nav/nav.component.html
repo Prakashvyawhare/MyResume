@@ -1,0 +1,47 @@
+<div class="navb">
+<ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link" id="pills-home-tab" data-toggle="pill" routerLink="home" routerLinkActive="active" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" routerLink="personalDetails"  routerLinkActive="active" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" routerLink="education"  routerLinkActive="active" role="tab" aria-controls="pills-contact" aria-selected="false">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" routerLink="Skills"  routerLinkActive="active" role="tab" aria-controls="pills-contact" aria-selected="false">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" routerLink="projects"  routerLinkActive="active" role="tab" aria-controls="pills-contact" aria-selected="false">Projects</a>
+      </li>
+    <!-- <li class="nav-item">
+      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" routerLink="article"  routerLinkActive="active" role="tab" aria-controls="pills-contact" aria-selected="false">Article</a>
+    </li> -->
+  </ul>
+</div>
+  <!-- <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">ghfh</div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+  </div> -->
+
+  <div class="split card ">
+    <img [src]="CandidateService.myDetails.profile" alt="John" style="width:100%">
+    <h3>{{CandidateService.myDetails.name}} {{CandidateService.myDetails.FatherName}} {{CandidateService.myDetails.surName}}</h3>
+    <p class="title" class="fa fa-envelope-o">{{CandidateService.myDetails.email}} </p>
+    <p class="title" class="fa fa-phone">{{CandidateService.myDetails.Contact}} </p>
+    <!-- <p>Date of birth: {{CandidateService.myDetails.dateOfBirth}}</p>
+    <p>Gender: {{CandidateService.myDetails.gender}}</p>
+    <p>Material Status : {{CandidateService.myDetails.MaterialStatus}} </p> -->
+    <span>
+    <a href="https://github.com/Prakashvyawhare"class="fa fa-github-square" ></a>
+    <a href="https://github.com/Prakashvyawhare"class="fa fa-instagram"></a>
+    <a href="https://github.com/Prakashvyawhare"class="fa fa-twitter"></a>
+    <a href="https://github.com/Prakashvyawhare"class="fa fa-linkedin-square"></a>
+    <a href="https://github.com/Prakashvyawhare"class="fa fa-facebook"></a>
+    </span>
+    </div>
+    <div class="split right">
+<router-outlet></router-outlet>
+</div>

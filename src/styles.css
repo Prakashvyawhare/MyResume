@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+.container{
+    width: 80%;
+    padding: 10px;
+    display: flexbox;
+    font-size: large;
+    text-indent: 20px;
+    margin-top: 10px;
+    background-color: rgb(202, 246, 246);
+    border-radius: 10px;
+}
