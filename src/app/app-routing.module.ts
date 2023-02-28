@@ -4,6 +4,7 @@ import { ArticleComponent } from './article/article.component';
 import { EducationComponent } from './education/education.component';
 import { HomeComponent } from './home/home.component';
 import { PersonalDetailsComponent } from './personal-details/personal-details.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 
@@ -29,8 +30,16 @@ const routes: Routes = [
     component:SkillsComponent
   },
   {
-    path:"projects",
-    component:ProjectsComponent
+    path:"portfolio",
+    component:PortfolioComponent,
+    // children:[{
+    //   path:"projects/:id",
+    //   component:ProjectsComponent
+    // }]
+  },
+  {
+    path:"portfolio/projects/:id",
+    component:ProjectsComponent 
   },
   {
     path:"",

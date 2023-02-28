@@ -1,0 +1,17 @@
+
+<div *ngFor="let project of portfolio">
+    <div class="container" [routerLink]="['projects',project.id]">
+        <div class="container">
+            <h4>Project {{project.id}} </h4><hr>
+            <h5>{{project.title}}</h5>
+            <a [href]="project.git" class="fa fa-github-square">see the Repository</a>
+            <hr>
+            <a  style="font-size: small;" [routerLink]="['projects',project.id]"> More details.</a>
+            <!-- <p>{{projects.discription}}</p> -->
+                 
+        </div>
+    </div>
+    
+     
+</div>                          
+
