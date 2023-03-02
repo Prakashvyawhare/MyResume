@@ -2,12 +2,22 @@
     position: relative;
     z-index: 1;
     overflow-x: hidden;
-    width: 50%;
+    width: 65%;
     
 
 }
+.title{
+color: darkorange;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bold;
+text-align: center;
+/* margin: 20px; */
+padding: 20px;
+}
 .navb{
     position: relative;
+    background-color: rgb(202, 246, 246);
+    font-family: 'Times New Roman', Times, serif;
 }
 .right{
     right: 0;
@@ -15,6 +25,7 @@
     /* margin-right: 300px; */
 }
 .card {
+  font-family: 'Times New Roman', Times, serif;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin-top: 100px;
@@ -23,11 +34,7 @@
     float: left;
     left: 0;
   }
-  
-  .title {
-    color: grey;
-    font-size: 18px;
-  }
+
   
   button {
     border: none;
@@ -51,3 +58,4 @@
   button:hover, a:hover {
     opacity: 0.7;
   }
+ 
