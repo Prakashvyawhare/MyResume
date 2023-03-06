@@ -10,3 +10,13 @@
     background-color: rgb(202, 246, 246);
     border-radius: 10px;
 }
+
+:root{
+    --primary-color: #3fc060;
+    --secondary-color:#162328;
+}
+body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+}

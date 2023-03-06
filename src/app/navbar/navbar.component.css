@@ -1,0 +1,10 @@
+.navbar-light .navbar-nav .nav-link.active-link{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+h1{
+    font-weight: bold;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}

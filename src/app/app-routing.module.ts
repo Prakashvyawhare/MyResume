@@ -9,7 +9,7 @@ import { SkillsComponent } from './skills/skills.component';
 
 const routes: Routes = [
   {
-    path:'personalDetails',
+    path:'about',
     component:PersonalDetailsComponent
   },
   {
