@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { CandidateService } from '../services/candidate.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { CandidateService } from '../services/candidate.service';
 export class NavComponent implements OnInit {
 
   constructor(public CandidateService:CandidateService) { }
-
+@Input() Title:string=""
   ngOnInit(): void {
   }
 
