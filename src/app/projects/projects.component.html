@@ -1,7 +1,10 @@
 <div class="container">
     <h4>Project {{projects.id}} </h4><hr>
     <h5>{{projects.title}}</h5>
-    <a [href]="projects.git" class="fa fa-github-square">see the Repository</a>
+    <span class="fa fa-github-square">
+        <a [href]="projects.git" >see the Repository</a>
+    </span>
+    
     <hr>
     <p>{{projects.discription}}</p>
          

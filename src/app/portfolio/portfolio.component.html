@@ -4,7 +4,10 @@
         <div class="container">
             <h4>Project {{project.id}} </h4><hr>
             <h5>{{project.title}}</h5>
-            <a [href]="project.git" class="fa fa-github-square">see the Repository</a>
+            <span class="fa fa-github-square">
+                <a [href]="project.git" >see the Repository</a>
+            </span>
+            
             <hr>
             <a  style="font-size: small;" [routerLink]="['projects',project.id]"> More details.</a>
             <!-- <p>{{projects.discription}}</p> -->
